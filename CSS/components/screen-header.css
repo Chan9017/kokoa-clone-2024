@@ -22,8 +22,14 @@
   position: relative;
 }
 
-.screen-header__icons__dot {
+.screen-header__icons__chat-dot {
   position: absolute;
   left: 95px;
+  top: -5px;
+}
+
+.screen-header__icons__more-dot {
+  position: absolute;
+  left: 145px;
   top: -5px;
 }
