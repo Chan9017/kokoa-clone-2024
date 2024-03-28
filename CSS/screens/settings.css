@@ -1,0 +1,27 @@
+.settings__settings {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting-none-border {
+  border: 0px;
+}
+
+.settings__settings-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 30px -25px;
+}
+
+.settings__settings i {
+  width: 40px;
+  opacity: 0.8;
+  font-size: 22px;
+}
+
+.settings__settings-column:last-child {
+  color: var(--font-color__grey);
+}
