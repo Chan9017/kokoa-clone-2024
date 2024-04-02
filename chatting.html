@@ -9,7 +9,7 @@
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
     </style>
   </head>
-  <body class="chatting-screen">
+  <body id="chatting-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -40,7 +40,94 @@
       </div>
     </header>
 
-    <main class="main-screen"></main>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2024</div>
+      <div class="message-row">
+        <img
+          src="file:///C:/Users/ME/Desktop/kokoa-clone-2024/photo/KakaoTalk_20240312_112736925.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">SunYoung</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">What's up?</span>
+            <span class="message__time">21:28</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile fa-lg"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <form class="keyboard">
+      <div class="keyboard__first-line">
+        <button class="keyboard__alphabet">q</button>
+        <button class="keyboard__alphabet">w</button>
+        <button class="keyboard__alphabet">e</button>
+        <button class="keyboard__alphabet">r</button>
+        <button class="keyboard__alphabet">t</button>
+        <button class="keyboard__alphabet">y</button>
+        <button class="keyboard__alphabet">u</button>
+        <button class="keyboard__alphabet">i</button>
+        <button class="keyboard__alphabet">o</button>
+        <button class="keyboard__alphabet">p</button>
+      </div>
+      <div class="keyboard__second-line">
+        <button class="keyboard__alphabet">a</button>
+        <button class="keyboard__alphabet">s</button>
+        <button class="keyboard__alphabet">d</button>
+        <button class="keyboard__alphabet">f</button>
+        <button class="keyboard__alphabet">g</button>
+        <button class="keyboard__alphabet">h</button>
+        <button class="keyboard__alphabet">j</button>
+        <button class="keyboard__alphabet">k</button>
+        <button class="keyboard__alphabet">l</button>
+      </div>
+      <div class="keyboard__third-line">
+        <button class="keyboard__alphabet">
+          <i class="fa-solid fa-up-long"></i>
+        </button>
+        <button class="keyboard__alphabet">z</button>
+        <button class="keyboard__alphabet">x</button>
+        <button class="keyboard__alphabet">c</button>
+        <button class="keyboard__alphabet">v</button>
+        <button class="keyboard__alphabet">b</button>
+        <button class="keyboard__alphabet">n</button>
+        <button class="keyboard__alphabet">m</button>
+        <button class="keyboard__alphabet">
+          <i class="fa-solid fa-square-xmark"></i>
+        </button>
+      </div>
+      <div class="keyboard__forth-line">
+        <button class="keyboard__alphabet">123</button>
+        <button class="keyboard__alphabet">
+          <i class="fa-solid fa-globe"></i>
+        </button>
+        <button class="keyboard__alphabet">
+          <i class="fa-solid fa-microphone"></i>
+        </button>
+        <button class="keyboard__alphabet">space</button>
+        <button class="keyboard__alphabet">return</button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/f1cceead90.js"

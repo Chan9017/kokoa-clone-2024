@@ -25,3 +25,7 @@
 .settings__settings-column:last-child {
   color: var(--font-color__grey);
 }
+
+.settings-list {
+  display: block;
+}
