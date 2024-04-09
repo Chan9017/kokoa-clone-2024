@@ -1,3 +1,13 @@
+@keyframes SettingMenuFadeIn {
+  from {
+    transform: translateY(180px);
+  }
+  to {
+    transition: none;
+    opacity: 1;
+  }
+}
+
 .settings__settings {
   padding: 20px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -5,6 +15,40 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.settings__settings,
+.settings__settings-border {
+  opacity: 0;
+  animation: SettingMenuFadeIn 0.5s ease-in-out forwards;
+}
+
+.settings__settings:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.settings__settings:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.settings__settings-border {
+  animation-delay: 0.6s;
+}
+.settings__settings:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.settings__settings:nth-child(6) {
+  animation-delay: 1s;
+}
+.settings__settings:nth-child(7) {
+  animation-delay: 1.2s;
+}
+.settings__settings:nth-child(8) {
+  animation-delay: 1.4s;
+}
+.settings__settings:nth-child(9) {
+  animation-delay: 1.6s;
+}
+.settings__settings:last-child {
+  animation-delay: 1.8s;
 }
 
 .settings__setting-none-border {

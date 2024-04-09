@@ -1,0 +1,55 @@
+@keyframes WarningWindow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#no-mobile,
+#orientation-portrait {
+  animation: WarningWindow 0.5s linear forwards;
+}
+
+#no-mobile {
+  position: absolute;
+  z-index: 98;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  opacity: 0;
+}
+
+#orientation-portrait {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #orientation-portrait {
+    display: none;
+  }
+}

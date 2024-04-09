@@ -1,3 +1,23 @@
+@keyframes badgeAnimation {
+  0% {
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .badge {
   background-color: tomato;
   width: 30px;
@@ -8,4 +28,10 @@
   align-items: center;
   color: white;
   font-weight: 600;
+}
+
+.user-component:first-child .badge {
+  animation: badgeAnimation 0.8s ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 1s;
 }

@@ -3,10 +3,11 @@
   width: 100%;
   background-color: rgb(206, 205, 205);
   position: fixed;
-  bottom: 0;
+  bottom: -300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.3s ease-in-out;
 }
 
 .keyboard i {
