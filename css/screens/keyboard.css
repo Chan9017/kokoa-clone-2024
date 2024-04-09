@@ -1,0 +1,115 @@
+.keyboard {
+  height: 300px;
+  width: 100%;
+  background-color: rgb(206, 205, 205);
+  position: fixed;
+  bottom: -300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+.keyboard i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard__first-line,
+.keyboard__second-line,
+.keyboard__third-line,
+.keyboard__forth-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keyboard__first-line {
+  margin-top: 10px;
+}
+
+.keyboard__forth-line {
+  margin-bottom: 10px;
+}
+
+.keyboard__alphabet {
+  width: 48px;
+  height: 60px;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  justify-content: space-between;
+  font-size: 30px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.keyboard__alphabet:hover {
+  background-color: var(--yellow);
+  color: white;
+}
+
+.keyboard__alphabet:focus {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.keyboard__first-line .keyboard__alphabet:first-child,
+.keyboard__third-line .keyboard__alphabet:first-child,
+.keyboard__forth-line .keyboard__alphabet:first-child {
+  margin-left: 5px;
+}
+
+.keyboard__first-line .keyboard__alphabet:last-child,
+.keyboard__third-line .keyboard__alphabet:last-child,
+.keyboard__forth-line .keyboard__alphabet:last-child {
+  margin-right: 5px;
+}
+
+.keyboard__second-line .keyboard__alphabet:first-child {
+  margin-left: 33px;
+}
+
+.keyboard__second-line .keyboard__alphabet:last-child {
+  margin-right: 33px;
+}
+
+.keyboard__third-line .keyboard__alphabet:first-child,
+.keyboard__third-line .keyboard__alphabet:last-child,
+.keyboard__forth-line .keyboard__alphabet:first-child,
+.keyboard__forth-line .keyboard__alphabet:nth-child(2),
+.keyboard__forth-line .keyboard__alphabet:last-child {
+  background-color: rgb(167, 167, 167);
+  width: 63px;
+}
+
+.keyboard__third-line .keyboard__alphabet:first-child {
+  margin-right: 13px;
+}
+
+.keyboard__third-line .keyboard__alphabet:last-child {
+  margin-left: 13px;
+}
+
+.keyboard__forth-line .keyboard__alphabet:first-child {
+  font-size: 22px;
+  text-align: center;
+}
+
+.keyboard__forth-line .keyboard__alphabet:nth-child(4),
+.keyboard__forth-line .keyboard__alphabet:last-child {
+  font-size: 22px;
+}
+
+.keyboard__forth-line .keyboard__alphabet:nth-child(4):focus,
+.keyboard__forth-line .keyboard__alphabet:last-child:focus {
+  font-size: 24px;
+}
+
+.keyboard__forth-line .keyboard__alphabet:nth-child(4) {
+  width: 215px;
+}
+
+.keyboard__forth-line .keyboard__alphabet:last-child {
+  width: 133px;
+}
